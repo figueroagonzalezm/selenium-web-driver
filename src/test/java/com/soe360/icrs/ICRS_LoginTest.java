@@ -18,7 +18,7 @@ public class ICRS_LoginTest {
     By passwordLocator = By.id("formLogin:passwordTxt");
     By btnLogInLocator = By.id("formLogin:loginBtn");
 
-    By pageHeadTextLocator = By.xpath("//div[contains(string(), 'ICRS Servicio')]");
+    By pageHeadTextLocator = By.xpath("//div[contains(text(), 'ICRS Servicio')]");
 
 
     @Before
@@ -52,6 +52,6 @@ public class ICRS_LoginTest {
 
     @After
     public void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
 }
