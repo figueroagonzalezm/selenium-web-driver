@@ -47,6 +47,8 @@ public class PlaceOrderPage extends Base {
             txtArticlesCode.get(i).sendKeys(Keys.TAB);
             txtArticlesAmount.get(i).sendKeys(articlesAmountValues.get(i));
         }
+        txtArticlesCode.get(i-1).sendKeys(Keys.TAB);
+
         //waits for the value of hidden field articleCode to has a value
         ExpectedCondition<Boolean> condition = ExpectedConditions
                 .attributeToBeNotEmpty(txtArticlesCode2.get(i - 1), "value");
