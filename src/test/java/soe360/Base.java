@@ -84,7 +84,7 @@ public class Base {
     }
 
 
-    protected void waitForCondition(int seconds, ExpectedCondition condition) {
+    protected void waitForCondition(int seconds, ExpectedCondition<Boolean> condition) {
         WebDriverWait ewait = new WebDriverWait(driver, seconds);
         ewait.until(condition);
     }
